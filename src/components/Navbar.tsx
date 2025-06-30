@@ -1,20 +1,31 @@
-
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      setIsScrolled(scrollPosition > 50);
+      const currentScrollPos = window.scrollY;
+      const scrollingUp = prevScrollPos > currentScrollPos;
+      const scrolledToTop = currentScrollPos < 10;
+      
+      // Update scroll position
+      setIsScrolled(currentScrollPos > 50);
+      
+      // Determine navbar visibility
+      setIsVisible(scrolledToTop || scrollingUp);
+      
+      // Update previous scroll position
+      setPrevScrollPos(currentScrollPos);
     };
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [prevScrollPos]);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -34,6 +45,8 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'
+      } ${
         isScrolled
           ? 'bg-background shadow-lg backdrop-blur-sm'
           : 'bg-transparent'
