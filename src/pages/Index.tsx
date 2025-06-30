@@ -1,9 +1,9 @@
-
 import React, { useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
 import AboutSection from '../components/AboutSection';
 import ServicesSection from '../components/ServicesSection';
+import FAQSection from '../components/FAQSection';
 
 const Index = () => {
   useEffect(() => {
@@ -22,31 +22,8 @@ const Index = () => {
         <HeroSection />
         <AboutSection />
         <ServicesSection />
+        <FAQSection />
         
-        {/* FAQ Section Placeholder */}
-        <section id="faq" className="py-20 bg-background">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-foreground mb-6">
-              Rates and Insurance
-            </h2>
-            <div className="bg-accent/10 rounded-2xl p-8">
-              <p className="text-lg font-lato text-foreground mb-4">Session Fee - $200</p>
-              <p className="text-lg font-lato text-foreground mb-4">Psychodiagnostic Evaluation - $325</p>
-              <p className="text-muted-foreground font-lato mb-6">
-                I accept both private pay and insurance. I am in-network with BCBS and Aetna.
-              </p>
-              <p className="text-muted-foreground font-lato">
-                For out-of-network plans, I've partnered with Mentaya using this tool to help you check your eligibility for reimbursement for my services.
-              </p>
-            </div>
-            <div className="mt-12 p-6 bg-accent/5 rounded-xl">
-              <p className="text-lg font-lato text-foreground">
-                Unable to accept new clients at this time.
-              </p>
-            </div>
-          </div>
-        </section>
-
         {/* Contact Section */}
         <section id="contact" className="py-20 bg-gradient-to-br from-accent/10 to-background">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
