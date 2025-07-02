@@ -27,15 +27,30 @@ const Index = () => {
         <FAQSection />
         <ContactSection />
         
+        {/* Quote Section with Background Image */}
+        <section className="relative min-h-[60vh] flex items-center justify-center">
+          {/* Background Image */}
+          <img
+            src="/hero-poster.jpg"
+            alt="Calm ocean waves"
+            className="absolute inset-0 w-full h-full object-cover z-0"
+          />
+
+          {/* Overlay */}
+          <div className="absolute inset-0 bg-black/50 z-10"></div>
+
+          {/* Text Content */}
+          <div className="relative z-20 text-center text-white max-w-3xl px-4">
+            <blockquote className="font-playfair italic text-3xl md:text-4xl mb-4">
+              "I have come to believe that caring for myself is not self-indulgent. Caring for myself is an act of survival."
+            </blockquote>
+            <p className="font-lato mt-4">— Audre Lorde</p>
+          </div>
+        </section>
+        
         {/* Footer Section */}
         <section className="py-12 bg-background border-t border-border">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div className="mb-8">
-              <blockquote className="text-xl md:text-2xl font-playfair italic text-foreground mb-4">
-                "I have come to believe that caring for myself is not self-indulgent. Caring for myself is an act of survival."
-              </blockquote>
-              <p className="text-muted-foreground font-lato">—Audre Lorde</p>
-            </div>
             
             <div className="space-y-2 text-muted-foreground font-lato">
               <h3 className="text-xl font-playfair font-bold text-foreground mb-4">
