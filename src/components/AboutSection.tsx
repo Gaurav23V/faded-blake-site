@@ -45,10 +45,12 @@ const AboutSection = () => {
             
             <div className="order-1 lg:order-2">
               <div className="relative">
-                <div className="aspect-square bg-accent/20 rounded-2xl flex items-center justify-center">
-                  <div className="w-32 h-32 bg-accent/40 rounded-full flex items-center justify-center">
-                    <span className="text-4xl font-playfair text-accent-foreground">SB</span>
-                  </div>
+                <div className="aspect-square rounded-2xl overflow-hidden shadow-lg">
+                  <img
+                    src="/about-image.jpg"
+                    alt="Dr. Serena Blake"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-accent rounded-full opacity-20"></div>
                 <div className="absolute -top-4 -left-4 w-16 h-16 bg-accent rounded-full opacity-30"></div>

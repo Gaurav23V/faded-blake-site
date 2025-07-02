@@ -6,17 +6,17 @@ const ServicesSection = () => {
 
   const services = [
     {
-      image: 'https://images.unsplash.com/photo-1544273677-c433136ac510?q=80&w=2000&auto=format&fit=crop',
+      image: '/focus-image-1.jpg',
       title: 'Therapy for Healthcare Providers and Students',
       description: 'The care you provide for others may be driving you to seek therapy, whether due to burnout, compassion fatigue, imposter syndrome, people-pleasing tendencies, or perfectionism. Whether you\'re in pre-professional school, undergoing training, or reflecting on a long career in healthcare, we can address the unique stressors of your professional environment along with any challenges you may be facing in other areas of your life.'
     },
     {
-      image: 'https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?q=80&w=2000&auto=format&fit=crop',
+      image: '/focus-image-2.jpg',
       title: 'Therapy for Trauma and Grief',
       description: 'Life\'s challenges, whether a difficult childhood, a traumatic event, or series of events, or the loss of someone or something deeply meaningful, can lead to profound experiences of trauma and grief. Therapy offers a supportive space to process these experiences, care for yourself amidst painful thoughts and emotions, and work toward a sense of grounding and meaning.'
     },
     {
-      image: 'https://images.unsplash.com/photo-1617053531959-e2489b4a45a6?q=80&w=2000&auto=format&fit=crop',
+      image: '/focus-image-3.jpg',
       title: 'Therapy for Second Generation Individuals In Immigrant Families',
       description: 'Second generation individuals in immigrant families, born in the U.S. to at least one parent born abroad, often navigate the complexities of multiple cultures and diverse expectations. This experience can bring challenges such as feeling like a foreigner in your own country and navigating strained family relationships. Therapy offers a supportive space to explore and process this unique and multifaceted aspect of your life.'
     }
