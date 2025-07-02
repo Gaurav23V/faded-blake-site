@@ -1,73 +1,67 @@
-# Welcome to your Lovable project
+# Therapist Website Build
 
-## Project info
+This project is a single-page website built for an imaginary therapist, Dr. Serena Blake.
 
-**URL**: https://lovable.dev/projects/bf57fccb-f4c4-46ca-8b29-5e81cdbcdf14
+The primary goal was to closely replicate a provided reference design, focusing on attention to detail, responsiveness, and a polished user experience.
 
-## How can I edit this code?
+### ✨ **[Live Demo on Vercel](https://faded-blake-site.vercel.app/)** ✨
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+![Project Screenshot](public/demo_image.png)
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/bf57fccb-f4c4-46ca-8b29-5e81cdbcdf14) and start prompting.
+## 🚀 About The Project
 
-Changes made via Lovable will be committed automatically to this repo.
+This is a fully responsive, single-page website designed to be a modern and calming online presence for a mental health professional. The development process leveraged AI tools for initial scaffolding, followed by manual code refinement to achieve a pixel-perfect match with the design specifications and to implement custom interactive features.
 
-**Use your preferred IDE**
+### Key Features
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+*   **Responsive Design:** A mobile-first approach ensures a seamless experience on all devices, from phones to desktops.
+*   **Dynamic Navbar:** The navigation bar intelligently hides on scroll-down and reappears on scroll-up for an unobtrusive browsing experience.
+*   **Engaging Hero Section:** Features an autoplaying, looping background video to immediately capture user attention.
+*   **Smooth Animations:** Subtle fade-in-on-scroll animations are used throughout the site to elegantly reveal content.
+*   **Interactive Components:** Includes an accordion for the FAQ section and a contact form with a client-side animated success state upon submission.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## 🛠️ Tech Stack
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+This project was built using a modern frontend stack:
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+*   **Framework:** [React](https://reactjs.org/) (via [Vite](https://vitejs.dev/))
+*   **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+*   **UI Components:** [Shadcn/UI](https://ui.shadcn.com/)
+*   **Animation:** [Framer Motion](https://www.framer.com/motion/)
+*   **Deployment:** [Vercel](https://vercel.com/)
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## ⚙️ Running Locally
 
-**Edit a file directly in GitHub**
+To get a local copy up and running, follow these simple steps.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+1.  **Clone the repository**
+    ```sh
+    git clone https://github.com/your-username/your-repo-name.git
+    ```
+2.  **Navigate to the project directory**
+    ```sh
+    cd your-repo-name
+    ```
+3.  **Install NPM packages**
+    ```sh
+    npm install
+    ```
+4.  **Run the development server**
+    ```sh
+    npm run dev
+    ```
+    The application will be available at `http://localhost:5173`.
 
-**Use GitHub Codespaces**
+---
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Acknowledgment
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/bf57fccb-f4c4-46ca-8b29-5e81cdbcdf14) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+*   This project was completed as an assignment for the **Grow My Therapy** internship program.
+*   Design inspiration was drawn from [drjenniferhahm.com](https://www.drjenniferhahm.com/).
