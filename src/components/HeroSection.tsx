@@ -18,22 +18,15 @@ const HeroSection = () => {
       <div className="relative w-11/12 h-[70vh] mx-auto rounded-xl overflow-hidden flex items-center justify-center">
         {/* Video Background (now inside the container) */}
         <video
+          poster="/hero-poster.jpg"
           autoPlay
           muted
           loop
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source
-            src="https://player.vimeo.com/external/373985758.hd.mp4?s=e8b4c3c4b8b6b4c5d6e7f8g9h0i1j2k3&profile_id=175"
-            type="video/mp4"
-          />
-          {/* Alternative placeholder - using a static image if video fails */}
-          <img
-            src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?q=80&w=3945&auto=format&fit=crop"
-            alt="Ocean waves"
-            className="absolute inset-0 w-full h-full object-cover"
-          />
+          <source src="/hero-video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
         </video>
 
         {/* Dark Overlay (now inside the container) */}
